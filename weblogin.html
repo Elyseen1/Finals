@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Basic Login Page</title>
+  </head>
+  <body>
+    <div id="container">
+
+      <div id="title_container">
+        <h2 id="sub_header"> Welcome to student database </h2>
+      </div>
+
+      <div id="form_container">
+        <h2> Username </h2>
+        <input placeholder="Username" type="text" id="username"/>
+        <h2> Password </h2>
+        <input placeholder="password" type="text" id="password"/>
+      </div>
+
+      <div id="button_container">
+        <button onclick="login()"> Login </button>
+
+        <button onclick="register()"> Register </button>
+      </div>
+
+    </div>
+  </body>
+
+  <style>
+    /* https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b7 */
+    html, body {
+      width: 100%;
+      height: 100%;
+      background-color: #FCBF49;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #container {
+      width: 35%;
+      height: 400px;
+
+      background-color: #fff;
+      border-radius: 10px;
+      outline: 1px solid #fff;
+      outline-offset: 3px;
+      -moz-outline-radius: 10px;
+
+    }
+
+    #title_container {
+      width: 100%;
+      height: 5%;
+
+      text-align: center;
+      float: left;
+      margin: 0;
+
+      color: #003049;
+      text-transform: uppercase;
+      font-family: Verdana;
+      font-size: 12px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+
+      color: #003049;
+    }
+
+
+    #form_container {
+      width: 100%;
+      height: 50%;
+
+      float: left;
+      margin-top: 2px;
+      padding-left: 100px;
+      padding-right: 100px;
+
+      box-sizing: border-box;
+    }
+
+    #form_container * {
+      width: 100%;
+      height: 30px;
+
+      border: none;
+      outline: none;
+      
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+
+      margin-top: 3px;
+      float: left;
+
+    }
+
+    #button_container {
+      width: 100%;
+      height: 5%;
+      
+      text-align: center;
+      float: left;
+      margin-bottom: 50px;
+
+      font-family: Verdana;
+
+    }
+
+    #content {
+      width: 105px;
+      height: 100%;
+
+      margin: 0;
+      padding: 0;
+      float: left;
+
+      color: #D62828;
+      margin-right: 5px;
+    }
+
+
+
+  </style>
+
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+  <script src="LOGIN.js"></script>
+
+</html>
